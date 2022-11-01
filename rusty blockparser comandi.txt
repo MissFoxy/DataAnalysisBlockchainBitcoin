@@ -1,0 +1,154 @@
+Analisi complessiva di tutti i blocchi.
+
+1 - Analisi blocchi fino al 31 Dicembre 2012 
+dal blocco 0 al blocco 214553
+
+rusty-blockparser -e 214553 balances ~/giulia/
+rusty-blockparser -e 214553 unspentcsvdump ~/giulia/
+rusty-blockparser -e 214553 csvdump ~/giulia/
+
+2 - Analisi blocchi dal 1 Gennaio 2013 fino a fine Dicembre 2016
+01-01-2013 ore 00:00 Blocco 214554
+2016-12-31 ore 23:41 Blocco 446026
+
+rusty-blockparser -s 214554 -e 446026 balances ~/giulia/  214554_446026
+rusty-blockparser -s 214554 -e 446026 unspentcsvdump ~/giulia/
+rusty-blockparser -s 214554 -e 446026 csvdump ~/giulia/
+
+---dal blocco 214554 al Blocco 446026 sono in totale 231.472. Dividento per 4: 57.868 blocchi
+rusty-blockparser -s 214554 -e 272422 csvdump ~/giulia/ 
+rusty-blockparser -s 272423 -e 330290 csvdump ~/giulia/  
+rusty-blockparser -s 330291 -e 388158 csvdump ~/giulia/ 
+rusty-blockparser -s 388159 -e 446026 csvdump ~/giulia/ 
+
+rusty-blockparser -s 388159 -e 446026 csvdump ~/giulia/ divido ancora?
+
+3 - Anno 2017 446027_501950
+2017-01-01 00:02 blocco 446027
+2017-12-31 23:57 blocco 501950
+
+rusty-blockparser -s 446027 -e 501950 balances ~/giulia/
+rusty-blockparser -s 446027 -e 501950 unspentcsvdump ~/giulia/
+rusty-blockparser -s 446027 -e 501950 csvdump ~/giulia/   
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 446027 -e 501950 csvdump L:/TESI
+
+rusty-blockparser -s 446027 -e 501950 csvdump L:/TESI
+
+
+
+rusty-blockparser -s 446027 -e 473988 csvdump ~/giulia/   
+rusty-blockparser -s 473989 -e 501950 csvdump ~/giulia/   
+
+
+
+4 - Discesa: analisi blocchi da Gennaio 2018 fino a dicembre 2019
+2018-01-01 00:04 blocco 501951
+2019-12-31 23:58 blocco 610680
+
+rusty-blockparser -s 501951 -e 610680 balances ~/giulia/
+rusty-blockparser -s 501951 -e 610680 unspentcsvdump ~/giulia/
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 501951 -e 610680 csvdump L:/TESI
+
+
+
+rusty-blockparser -s 501951 -e 515542 csvdump ~/giulia/  13.591 501951_515542
+rusty-blockparser -s 515543 -e 529133 csvdump ~/giulia/  13.590 515543_529133
+rusty-blockparser -s 529134 -e 542730 csvdump ~/giulia/  13.596 529134_542730
+rusty-blockparser -s 542731 -e 556315 csvdump ~/giulia/  13.584 542731_556315
+rusty-blockparser -s 556316 -e 569916 csvdump ~/giulia/  13.600 556316_569916
+rusty-blockparser -s 569917 -e 583500 csvdump ~/giulia/  13.583 569917_583500
+rusty-blockparser -s 583501 -e 597401 csvdump ~/giulia/  13.900 583501_597401 
+rusty-blockparser -s 597402 -e 610680 csvdump ~/giulia/  13.278 597402_610680
+
+
+
+rusty-blockparser -s 501951 -e 515542 csvdump ~/giulia/  
+rusty-blockparser -s 515543 -e 529133 csvdump ~/giulia/ 
+rusty-blockparser -s 529134 -e 542730 csvdump ~/giulia/ 
+rusty-blockparser -s 542731 -e 556315 csvdump ~/giulia/  
+rusty-blockparser -s 556316 -e 569916 csvdump ~/giulia/  
+rusty-blockparser -s 569917 -e 583500 csvdump ~/giulia/ 
+rusty-blockparser -s 583501 -e 597401 csvdump ~/giulia/ 
+rusty-blockparser -s 597402 -e 610680 csvdump ~/giulia/  
+
+
+
+
+5 - RISALITA: ANALISI BLOCCHI DA GENNAIO 2020 FINO AL 31 AGOSTO 2021
+2019-12-31 23:58 blocco 610681
+2021-08-31 23:53 blocco 698461
+
+2021-06-30 23:36 blocco 689254
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 683846 -e 698461 csvdump L:/683846_698461 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 698461 csvdump L:/
+
+
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 689254 balances T:/file_csv_tesi/balances
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 698461 balances T:/file_csv_tesi/balances
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 689254 unspentcsvdump T:/file_csv_tesi/unspent
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 698461 unspentcsvdump T:/file_csv_tesi/unspent
+
+rusty-blockparser -s 610681 -e 698461 csvdump ~/giulia/
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 1231 -e 1235 unspentcsvdump
+
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 625310 csvdump T:/file_csv_tesi/ 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 625311 -e 639942 csvdump T:/file_csv_tesi/ 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 639943 -e 654574 csvdump L:/TESI
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 654575 -e 669210 csvdump L:/TESI
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 669211 -e 683845 csvdump L:/TESI
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 683846 -e 698461 csvdump L:/TESI
+
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 625310 csvdump L:/610681_625310 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 625311 -e 639942 csvdump L:/625311_639942 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 639943 -e 654574 csvdump L:/639943_654575 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 654575 -e 669210 csvdump L:/654576_669210 
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 669211 -e 683845 csvdump L:/669211_683845
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 683846 -e 698461 csvdump L:/683846_698461 
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 610681 -e 625310 csvdump ~/giulia/ 14.629 610681_625310
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 625311 -e 639942 csvdump ~/giulia/ 14.631 625311_639942
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 639943 -e 654574 csvdump ~/giulia/ 14.632 639943_654575
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 654575 -e 669210 csvdump ~/giulia/ 14.633 654576_669210
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 669211 -e 683845 csvdump ~/giulia/ 14.634 669211_683845
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 683846 -e 698461 csvdump ~/giulia/ 14.615 683846_698461
+
+
+rusty-blockparser -d T:/BitcoinCore_dati/blocks -s 0 -e 698461 balances L:/
+
+C:/Users/scrib/Desktop
+
+
+USAGE:
+    rusty-blockparser [FLAGS] [OPTIONS] [SUBCOMMAND]
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+    -v               Increases verbosity level. Info=0, Debug=1, Trace=2 (default: 0)
+        --verify     Verifies the leveldb index integrity and verifies merkle roots
+
+OPTIONS:
+    -d, --blockchain-dir <blockchain-dir>    Sets blockchain directory which contains blk.dat files (default:
+                                             ~/.bitcoin/blocks)
+    -c, --coin <NAME>                        Specify blockchain coin (default: bitcoin) [possible values: bitcoin,
+                                             testnet3, namecoin, litecoin, dogecoin, myriadcoin, unobtanium]
+    -e, --end <NUMBER>                       Specify last block for parsing (inclusive) (default: all known blocks)
+    -s, --start <NUMBER>                     Specify starting block for parsing (inclusive)
+
+SUBCOMMANDS:
+    balances          Dumps all addresses with non-zero balance to CSV file
+    csvdump           Dumps the whole blockchain into CSV files
+    help              Prints this message or the help of the given subcommand(s)
+    simplestats       Shows various Blockchain stats
+    unspentcsvdump    Dumps the unspent outputs to CSV file
+
+
+
+
